@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #87CEFA, #f0f8ff);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+#score, #time {
+    font-size: 30px;
+    color: #ff4500;
+    font-weight: bold;
+}
+
+.parent {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.squares {
+    border: 2px solid #4CAF50;
+    background-color: #E6E6FA;
+    border-radius: 10px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    background: rgb(146, 54, 54);
+    border: 3px solid #333;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.square.mole {
+    background-image: url('mole-whack-a-mole-png.png');
+    background-size: cover;
+    background-position: center;
+    transition: background 0.3s ease;
+}
+
+
+.square:hover {
+    background: rgb(146, 54, 54);
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 18px;
+    color: #555;
+}
